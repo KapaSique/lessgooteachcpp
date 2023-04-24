@@ -1,0 +1,122 @@
+№1
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    long long n; cin >> n;
+    double b = 9;
+    cout << b << endl;
+    for (int i = 1; i < n; i++) {
+        b = 0.1 * b + 10;
+        cout << b << endl;
+    }
+    return 0;
+}
+
+№2
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    long long n; cin >> n;
+    double b = -1;
+    cout << b << endl;
+    for (int i = 1; i < n; i++) {
+        b = 9 - 2 * b;
+        cout << b << endl;
+    }
+    return 0;
+}
+
+№3
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    long long n; cin >> n;
+    double b = 1;
+    cout << b << endl;
+    for (int i = 1; i < n; i++) {
+        b = 0.2 * pow(b, 4) + 1;
+        cout << b << endl;
+    }
+    return 0;
+}
+
+№4
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    const double pi = 3.14159265358979323846;
+    long long n; cin >> n;
+    double b = 4.7;
+    cout << b << endl;
+    for (int i = 1; i < n; i++) {
+        b = sin(b) + pi;
+        cout << b << endl;
+    }
+    return 0;
+}
+
+№5
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int n; cin >> n;
+    double b = 0.1;
+    cout << b << endl;
+    for (int i = 1; i < n; i++) {
+        b = 1 / 6 * (0.05 + pow(b, 3));
+        cout << b << endl;
+    }
+    return 0;
+}
+
+№6
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int n; cin >> n;
+    double b = 2;
+    cout << b << endl;
+    for (int i = 1; i < n; i++) {
+        b = 0.5 * (1 / b + b);
+        cout << b << endl;
+    }
+    return 0;
+}
+
+№7
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int n; cin >> n;
+    double b = 5;
+    cout << b << endl;
+    for (int i = 1; i < n; i++) {
+        b = pow(-1, i) * b - 8;
+        cout << b << endl;
+    }
+    return 0;
+}
+
+№8
+
+№9
+№10
+

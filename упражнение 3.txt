@@ -1,0 +1,293 @@
+№1
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long x;
+	cin >> x; //месяц по числу
+	switch (x)
+	{
+		case 1: cout << "january" << endl; break;
+		case 2: cout << "february" << endl; break;
+		case 3: cout << "march" << endl; break;
+		case 4: cout << "april" << endl; break;
+		case 5: cout << "may" << endl; break;
+		case 6: cout << "june" << endl; break;
+		case 7: cout << "july" << endl; break;
+		case 8: cout << "august" << endl; break;
+		case 9: cout << "september" << endl; break;
+		case 10: cout << "october" << endl; break;
+		case 11: cout << "november" << endl; break;
+		case 12: cout << "december" << endl; break;
+	}
+}
+
+№2
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long x;
+	cin >> x;
+	switch (x)
+	{
+		case 1: cout << "31 days" << endl; break;  //сколько дней  в месяце
+		case 2: cout << "28 days" << endl; break;
+		case 3: cout << "31 days" << endl; break;
+		case 4: cout << "30 days" << endl; break;
+		case 5: cout << "31 days" << endl; break;
+		case 6: cout << "30 days" << endl; break;
+		case 7: cout << "31 days" << endl; break;
+		case 8: cout << "31 days" << endl; break;
+		case 9: cout << "30 days" << endl; break;
+		case 10: cout << "31 days" << endl; break;
+		case 11: cout << "30 days" << endl; break;
+		case 12: cout << "31 days" << endl; break;
+	}
+}
+
+№3
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long x;
+	cin >> x;
+	switch (x)
+	{
+		case 1: cout << "пики" << endl; break;  //масти
+		case 2: cout << "трефы" << endl; break;
+		case 3: cout << "бубны" << endl; break;
+		case 4: cout << "червы" << endl; break;
+	}
+}
+
+№4
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long x;
+	cin >> x;
+	switch (x)
+	{
+		case 13: cout << "korol" << endl; break;  //достоинства карт
+		case 6: cout << "shesterka" << endl; break;
+		case 7: cout << "semerka" << endl; break;
+		case 8: cout << "vosmerka" << endl; break;
+		case 9: cout << "devyatka" << endl; break;
+		case 10: cout << "desyat" << endl; break;
+		case 11: cout << "valet" << endl; break;
+		case 12: cout << "dama" << endl; break;
+	}
+}
+
+№5
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long x, y;
+	cin >> x >> y;
+	switch (x)
+	{
+		case 13: cout << "korol" << endl; break;  //достоинства карт
+		case 6: cout << "shesterka" << endl; break;
+		case 7: cout << "semerka" << endl; break;
+		case 8: cout << "vosmerka" << endl; break;
+		case 9: cout << "devyatka" << endl; break;
+		case 10: cout << "desyat" << endl; break;
+		case 11: cout << "valet" << endl; break;
+		case 12: cout << "dama" << endl; break;
+	}
+	switch (y)
+	{
+		case 1: cout << "pik" << endl; break;
+		case 2: cout << "buben" << endl; break;
+		case 3: cout << "chervi" << endl; break;
+		case 4: cout << "chervy" << endl; break;
+	}
+}
+
+№6
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int month = n % 12;
+    string monthName;
+    switch (month) {
+    case 0:
+        monthName = "January";
+        break;
+    case 1:
+        monthName = "February";
+        break;
+    case 2:
+        monthName = "March";
+        break;
+    case 3:
+        monthName = "April";
+        break;
+    case 4:
+        monthName = "May";
+        break;
+    case 5:
+        monthName = "June";
+        break;
+    case 6:
+        monthName = "July";
+        break;
+    case 7:
+        monthName = "August";
+        break;
+    case 8:
+        monthName = "September";
+        break;
+    case 9:
+        monthName = "October";
+        break;
+    case 10:
+        monthName = "November";
+        break;
+    case 11:
+        monthName = "December";
+        break;
+    }
+    cout << monthName << endl;
+    return 0;
+}
+
+№7
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    long long n;
+    cin >> n;
+    switch (n) 
+    {
+    case 1: case 2: case 3: case 4: case 5:
+        cout << "10 am to 6 pm" << endl;
+        break;
+    case 6: case 7:
+        cout << "12 am to 4 pm" << endl;
+        break;
+    }
+    return 0;
+}
+
+№8
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    long long n;
+    cin >> n;
+    if (90 <= n <= 100)
+    {
+        cout << "Otlichno" << endl;
+    }
+    else if (70 <= n <= 89)
+    {
+        cout << "Uchugei" << endl;
+    }
+    else if (50 <= n <= 69)
+    {
+        cout << "Kuha5an" << endl;
+    }
+    else if ( n < 50)
+    {
+        cout << "Lox" << endl;
+    }
+    return 0;
+}
+
+№9
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double num1, num2, result;
+    char operation;
+    cin >> num1 >> num2 >> operation;
+
+    switch (operation) {
+    case '+':
+        result = num1 + num2;
+        break;
+    case '-':
+        result = num1 - num2;
+        break;
+    case '*':
+        result = num1 * num2;
+        break;
+    case '/':
+        result = num1 / num2;
+        break;
+    default:
+        cout << "Oshibo4ka" << endl;
+        return 1;
+    }
+    cout << result << endl;
+    return 0;
+}
+
+№10
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int year;
+    cin >> year;
+    string animal;
+    switch (year % 12) {
+    case 0:
+        animal = "obezyan";
+        break;
+    case 1:
+        animal = "petuh";
+        break;
+    case 2:
+        animal = "sobaken";
+        break;
+    case 3:
+        animal = "pigger";
+        break;
+    case 4:
+        animal = "rat";
+        break;
+    case 5:
+        animal = "bull";
+        break;
+    case 6:
+        animal = "PZ ausf. VI (Tiger)";
+        break;
+    case 7:
+        animal = "krolik";
+        break;
+    case 8:
+        animal = "drakosha";
+        break;
+    case 9:
+        animal = "zmiy";
+        break;
+    case 10:
+        animal = "pony";
+        break;
+    case 11:
+        animal = "shit";
+        break;
+    }
+    cout << animal << endl;
+    return 0;
+}

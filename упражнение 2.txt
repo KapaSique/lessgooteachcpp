@@ -1,0 +1,121 @@
+№1
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b, p, v; double s;
+	cin >> s;
+	a = sqrt(s) * 4; //периметр квадрата по площади
+	cout << a << endl;
+	system("pause");
+}
+
+№2
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, p, s;
+	cin >> p;
+	s = (pow(p/3, 2) * sqrt(3))/4;  //площадь равностороннего треугольника
+	cout << s << endl;
+	system("pause");
+}
+
+№3
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b, c, d, s, s1;
+	cin >> a >> b >> c >> d;
+	s = sqrt(pow((b - a), 2) + pow((d - c), 2)); //расстояние между двумя точками с кордами abcd
+	s1 = abs(s);
+	cout << s1 << endl;
+	system("pause");
+}
+
+№4
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b, c, d, s, s1;
+	cin >> a >> b;
+	s = (pow(a, 3) + pow(b, 3)) / 2; //ср арифметическое двух кубов
+	cout << s << endl;
+	system("pause");
+}
+
+№5
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b, c, d, s1; double s; //ср геометрическое двух чисел
+	cin >> a >> b;
+	s = sqrt(a * b);
+	cout << s << endl;
+	system("pause");
+}
+
+№6
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b, c, d, s1; double s;
+	cin >> a >> b;
+	s = sqrt(a * a + b * b); //гипотенуза по двум катетам
+	cout << s << endl;
+	system("pause");
+}
+
+№7
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b, c, d, s1; double s;
+	cin >> a >> b;
+	s = (a * b) / 2;
+	cout << s << endl; //площадь прямого треугольника по двум сторонам
+	system("pause");
+}
+
+№8
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b, p; double s;
+	cin >> a >> b;
+	p = sqrt(a * a + b * b) + a + b; //периметр по катетам
+	cout << p << endl;
+	system("pause");
+}
+
+№9
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b, p; double s; //ребро куба по площади поверхности
+	cin >> s;
+	a = sqrt(s/6);
+	cout << a << endl;
+	system("pause");
+}
+
+№10
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b, p, v; double s; //ребро куба по объему
+	cin >> v;
+	a = pow(v, 1.0/3);
+	cout << a << endl;
+	system("pause");
+}
+
